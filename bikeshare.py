@@ -17,7 +17,7 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    city = input('ENTER THE CITY TO EXPLORE: ')
+    city = input('ENTER THE CITY TO EXPLORE: ').lower()
     while city not in ['chicago', 'new york city', 'washington']:
          print('You have entered an invalid city name!')
          city = input ("CHOOSE BETWEEN chicago, new york city OR washington: ").lower()
@@ -131,12 +131,12 @@ def trip_duration_stats(df):
     start_time = time.time()
 
     # TO DO: display total travel time
-    total_drip_duration = df['Trip Duration'].sum()
+    total_trip_duration = df['Trip Duration'].sum()
     print("total travel time in hours is: ", total_drip_duration)
 
     # TO DO: display mean travel time
-    average_mean_duration = df['Trip Duration'].mean() 
-    print("mean travel time in hours is: ", average_mean_duration)
+    mean_duration = df['Trip Duration'].mean() 
+    print("mean travel time in hours is: ", mean_duration)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)

@@ -18,5 +18,4 @@ In this project, I used some softwares like python 3, Numpy and Pandas installed
 
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Udacity 
